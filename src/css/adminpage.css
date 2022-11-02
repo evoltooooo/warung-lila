@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Heavitas;
+    src: url(../fonts/Heavitas.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background: rgb(235, 235, 235);
+}
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: black;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Heavitas;
+}
+a {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.fa-solid {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover {
+    background: white;
+    color: black;
+    transition: all 0.5s ease;
+}
+nav:hover {
+    width: 240px;
+    transition: all 0.5s ease;
+}
+.logout {
+    position: absolute;
+    bottom: 50px;
+}
+.logout:hover {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+.content {
+    margin-left: 110px;
+}
+.title {
+    margin-top: 23%;
+    margin-left: -3%;
+    text-align: center;
+}
+.content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
